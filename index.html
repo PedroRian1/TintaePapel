@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tinta e Papel</title>
+  <meta name="description" content="Tinta e Papel: clássicos, estante e anotações sobre livros.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Playfair+Display:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="moldura">
+      <p class="sobretitulo">Fundado em MDCCCXC &middot; Edição Digital</p>
+      <h1>Tinta e Papel</h1>
+      <p class="subtitulo">Onde os livros velhos encontram o código novo</p>
+      <div class="ornamento" aria-hidden="true">&#10086; &nbsp; &#10087; &nbsp; &#10086;</div>
+    </div>
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="#estante">Estante</a>
+      <a href="#lendo">Lendo agora</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="abertura">
+      <p class="capitular">
+        Há livros que se leem uma vez e livros que nos leem para sempre. Este site reúne
+        os que ficaram: clássicos de domínio público, descobertas de sebo e anotações feitas
+        à margem, como se faz com lápis e paciência.
+      </p>
+    </section>
+
+    <section id="estante" class="secao">
+      <h2><span>I.</span> A Estante</h2>
+      <p class="legenda">Escolha uma prateleira para filtrar os volumes.</p>
+
+      <div class="filtros" id="filtros" role="group" aria-label="Filtrar por gênero"></div>
+      <div class="estante" id="estante-livros"></div>
+    </section>
+
+    <section id="lendo" class="secao">
+      <h2><span>II.</span> Lendo Agora</h2>
+      <article class="lendo-card">
+        <div class="lombada-grande" aria-hidden="true">
+          <span>Drácula</span>
+        </div>
+        <div class="lendo-texto">
+          <h3>Drácula</h3>
+          <p class="autor">Bram Stoker, 1897</p>
+          <p>Romance epistolar de cartas, diários e telegramas. A leitura segue, capítulo a capítulo, à luz de vela (ou de abajur).</p>
+          <div class="progresso" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45" aria-label="Progresso da leitura">
+            <div class="progresso-barra" style="width:45%"></div>
+          </div>
+          <p class="progresso-legenda">45% lido</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="sobre" class="secao">
+      <h2><span>III.</span> Sobre o Curador</h2>
+      <div class="duas-colunas">
+        <p>
+          Sou estudante de Ciência da Computação e desenvolvedor web. Gosto de construir
+          coisas na internet, mas gosto igualmente do cheiro de livro velho. Este site
+          nasceu dessa mistura: um projeto de portfólio feito só com HTML, CSS e JavaScript,
+          sem frameworks, para mostrar o que dá para fazer com o básico bem feito.
+        </p>
+        <p>
+          Aqui você encontra um catálogo filtrável, tipografia de época e um layout
+          responsivo. O código está aberto no GitHub, e fica a sugestão de leitura
+          para quem quiser fuçar por dentro.
+        </p>
+      </div>
+      <ul class="tecnologias">
+        <li>HTML5 semântico</li>
+        <li>CSS3 (variáveis, grid, flexbox)</li>
+        <li>JavaScript puro</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="secao">
+      <h2><span>IV.</span> Correspondência</h2>
+      <p class="legenda">Cartas são bem-vindas. E-mails também.</p>
+      <div class="carimbos">
+        <!-- Troque SEU-USUARIO e o e-mail pelos seus -->
+        <a class="carimbo" href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">GitHub</a>
+        <a class="carimbo" href="mailto:seu@email.com">E-mail</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="ornamento" aria-hidden="true">&#10086;</div>
+    <p>Impresso digitalmente &middot; <span id="ano"></span> &middot; Todos os direitos reservados ao tempo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
